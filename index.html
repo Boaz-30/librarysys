@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    
 </head>
 <body>
+<h1>MINT LIBRARY</h1>
+
+<button id="newBookBtn" style="margin-left: 20px; display: flex; align-self: center; justify-self: center;">New Book</button>
+
+<dialog id="newBookDialog">
+    <form method="dialog">
+        <label for="bookName">Book Name</label>
+        <input type="text" id="bookName" name="bookName" required>
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" required >
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+        <label for="pages">Pages</label>
+        <input type="text" id="pages" name="pages" required>
+        <button id="addBookBtn">Add Book</button>
+</dialog>
+<div id="library"></div>
 </body>
 <script src="script.js"></script>
 </html>
